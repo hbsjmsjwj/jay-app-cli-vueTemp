@@ -1,9 +1,19 @@
 <template>
-  <div id="nav">
+  <!-- <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  </div> -->
+    <el-container>
+    <el-aside width="200px">Aside</el-aside>
+    <el-container>
+      <el-header>Header</el-header>
+      <el-main>
+        <router-view/>
+      </el-main>
+      <el-footer>Footer</el-footer>
+    </el-container>
+  </el-container>
+ 
 </template>
 
 <style>
